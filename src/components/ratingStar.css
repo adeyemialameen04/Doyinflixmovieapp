@@ -1,0 +1,9 @@
+.rating__container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.rating__container:nth-child(1) {
+  color: yellow;
+}

@@ -1,0 +1,31 @@
+.signin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signin .sign-with-google {
+  width: 10rem;
+}
+
+.welcome__txt {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--clr-background-sec);
+}
+
+.welcome__txt span {
+  color: var(--sec-btn);
+}
+
+.proceed__link {
+  margin-top: 0.9rem;
+  color: var(--clr-accent);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
