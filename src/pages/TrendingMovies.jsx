@@ -15,13 +15,6 @@ const TrendingMovies = () => {
     error
   } = useFetchAllMovies(`https://api.themoviedb.org/3/trending/all/day?language=en-US&page=${currentPage}`, currentPage);
 
-  // const apiKey = import.meta.env.MODE.REACT_APP_FIREBASE_API_KEY;
-
-  useEffect(() => {
-    // data && console.log(data);
-    // console.log(apiKey);
-  }, []);
-
   if (isError) {
     return (
       <Error />

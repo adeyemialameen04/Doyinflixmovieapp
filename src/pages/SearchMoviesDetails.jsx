@@ -15,7 +15,6 @@ const SearchMoviesDetails = () => {
     );
   }
 
-
   if (isError) {
     return (
       <Error />

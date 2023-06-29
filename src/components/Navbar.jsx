@@ -37,12 +37,15 @@ const Navbar = () => {
     };
   }, []);
 
+
+  // Scrolltotop
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behaviour: "smooth" });
   };
 
+
+  // chnages theme
   const handleToggleTheme = () => {
-    // setIsNavShowing(prev => !prev);
     setIsNavShowing(false);
     toggleTheme();
   };

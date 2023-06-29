@@ -85,7 +85,6 @@ img,
 picture,
 svg {
   max-width: 100%;
-  /* height: auto; */
   display: block;
 }
 
@@ -108,7 +107,6 @@ section>h1 {
 .user__not-signuped {
   width: 80%;
   margin: 0 auto;
-  /* background-color: red; */
   text-align: center;
   padding-block: 3rem;
   font-size: 1.8rem;
@@ -121,8 +119,6 @@ section>h1 {
   font-size: 0.9rem;
   color: var(--clr-accent);
   background-color: var(--sec-btn);
-  /* margin-top: .5rem; */
-  /* width: 10.1875rem; */
   width: clamp(7rem, 10vw, 11rem);
   border-radius: 100vh;
   border: 1px solid transparent;
@@ -137,14 +133,11 @@ section>h1 {
 /*=================== MOVIE DETAILS ================== */
 .movie__details-section {
   height: clamp(900px, 92vh, 100vh);
-  /* height: 92vh; */
-  /* height: 100%; */
   margin-bottom: 2rem;
   position: relative;
   background-color: #000;
   color: var(--clr-txt);
   display: block;
-  /* padding-block: 16rem; */
 }
 
 .background__img-container {
@@ -189,7 +182,6 @@ section>h1 {
 
 
 .movie__details h6 {
-  /* margin-bottom: .5rem; */
   font-weight: 600;
   font-size: 1.2em;
   color: var(--clr-white);
@@ -210,7 +202,6 @@ section>h1 {
 }
 
 .overview {
-  /* color: var(--clr-white); */
   font-size: .9rem;
   font-weight: 600;
   margin-top: 0.5rem;
@@ -292,7 +283,6 @@ section>h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(73, 166, 233, 0.5); */
   background: rgba(9, 1, 50, .8);
   display: grid;
   place-items: center;
@@ -309,7 +299,6 @@ section>h1 {
 .trailer {
   width: 100%;
   height: 400px;
-  /* height: 100%; */
 }
 
 /* ============= CASTS ============== */
@@ -317,7 +306,6 @@ section>h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1rem;
-  /* background-color: red; */
 }
 
 .cast {
@@ -347,8 +335,6 @@ section>h1 {
 .castName {
   color: var(--sec-btn);
   font-size: 0.9rem;
-  /* border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px; */
   padding: .8rem;
 }
 
@@ -362,7 +348,6 @@ section>h1 {
 
 /* =============== MOVIE LISTS =================== */
 .movies__section {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
 }
@@ -396,7 +381,6 @@ section>h1 {
   color: var(--clr-background);
   font-size: 1.1rem;
   font-weight: 700;
-  /* color: var(--clr-txt); */
 }
 
 .rating {
@@ -411,7 +395,6 @@ section>h1 {
   display: flex;
   align-items: center;
   align-self: center;
-  /* background-color: red; */
   padding: 10px;
   position: relative;
   margin-top: 1rem;
@@ -424,7 +407,6 @@ section>h1 {
   display: grid;
   place-content: center;
   border-radius: 50%;
-  /* background-color: var(--clr-background-sec); */
   background-color: var(--clr-accent);
   color: var(--clr-txt);
   font-weight: bold;
@@ -510,7 +492,6 @@ section>h1 {
 
   .time {
     font-size: 0.8rem;
-    /* margin-bottom: .2rem; */
     margin-top: 0.2rem;
   }
 

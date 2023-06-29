@@ -13,12 +13,6 @@ const TrendingMovieDetails = () => {
   const url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
   const { data, img_base_url, isLoading, isError, error } = useFetchAllMovies(url);
 
-
-  // useEffect(() => {
-  //   data && console.log(data);
-  // }, []);
-
-
   if (isLoading) {
     return (
       <Loading />

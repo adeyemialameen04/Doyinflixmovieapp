@@ -7,7 +7,6 @@ const apiKey = import.meta.env.VITE_REACT_APP_FIREBASE_API_KEY;
 
 const firebaseConfig = {
   apiKey: apiKey,
-  // apiKey: "AIzaSyCVMIGzfnYIv07OK4-0hTywCGHgZDYfsbM",
   authDomain: "doyinflix.firebaseapp.com",
   projectId: "doyinflix",
   storageBucket: "doyinflix.appspot.com",

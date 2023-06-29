@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 const useFetchAllMovies = (url, currentPage) => {
 
-  // const img_base_url = "https://image.tmdb.org/t/p/w500/";
+  const tmdbApiKey = import.meta.env.VITE_TMDB_API_KEY;
   const img_base_url = "https://image.tmdb.org/t/p/original/";
   const fetchData = async () => {
 
@@ -11,7 +11,7 @@ const useFetchAllMovies = (url, currentPage) => {
       method: 'GET',
       headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZTA3Nzc1MWRmYmQxYmFjZDcwMDAzZmYyNzUxODg2YyIsInN1YiI6IjYzZGQzYjExY2U1ZDgyMDA4NDhjNzc5ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.a5Z2ljr4fG3Nmoc1R2U0MgiEvz-E49MPNsmwbHZIv8A'
+        Authorization: `Bearer ${tmdbApiKey}`
       }
     };
 

@@ -6,7 +6,6 @@ import './auth.css';
 
 const Auth = () => {
   const [user, setUser] = useState(null);
-  console.log(auth?.currentUser);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {

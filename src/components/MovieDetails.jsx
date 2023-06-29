@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useRef, useEffect } from "react";
 import RatingStar from "./RatingStar";
 import useFetchTrailers from "../CustomHooks/useFetchTrailers";
 import useFetchCast from "../CustomHooks/useFetchCast";
@@ -16,10 +15,6 @@ const MovieDetails = ({ title, tagline, backdropPath, runtime, date, overview, i
   const hours = Math.floor(runtime / 60);
   const remainingMinutes = runtime % 60;
   const [isTrailerShowing, setIsTrailerShowing] = useState(false);
-
-  // useEffect(() => {
-  //   console.log(castData);
-  // });
 
   return (
     <>
@@ -67,8 +62,6 @@ const MovieDetails = ({ title, tagline, backdropPath, runtime, date, overview, i
           </button>
         </div>
       </div>
-      {/* <> */}
-      {/* </> */}
       <div className="container genres">
         {
           genres &&
