@@ -15,6 +15,7 @@ const Navbar = () => {
   const { theme, toggleTheme, isLightMode } = useContext(ThemeContext);
   const themeRef = useRef(null);
   const topRef = useRef(null);
+  const placeHolderImage = "https://fakeimg.pl/600x400";
 
   useEffect(() => {
     if (isNavShowing) {
@@ -59,7 +60,10 @@ const Navbar = () => {
       <nav id="nav" className="nav">
         <div className="container nav__container">
           <div>
-            <img src={auth?.currentUser?.photoURL} className="profile__picture" alt="" />
+            {
+              auth.currentUser.photoURL
+                ? (<img src={auth?.currentUser?.photoURL} className="profile__picture" alt="" />) :
+                <img src={placeHolderImage} />}
             <Link className="logo" to="/">DOYIN~FLIX</Link>
           </div>
           <ul className={`nav__links flex ${isNavShowing && 'show__nav'}`}>
