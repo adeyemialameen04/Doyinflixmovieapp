@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import RatingStar from "./RatingStar";
 import useFetchTrailers from "../CustomHooks/useFetchTrailers";
 import useFetchCast from "../CustomHooks/useFetchCast";
 import { FaTimes } from "react-icons/fa";
 import Casts from "./Casts";
+import Crew from "./Crew";
 
 const MovieDetails = ({ title, tagline, backdropPath, runtime, date, overview, imgBaseUrl, rating, id, genres }) => {
   const placeHolderImage = "https://fakeimg.pl/600x400";
@@ -70,12 +71,23 @@ const MovieDetails = ({ title, tagline, backdropPath, runtime, date, overview, i
           ))
         }
       </div>
-      <section className="casts__container container">
+      <h1>Cast</h1>
+      <section className="casts-crew__container container">
         {
           castData &&
           castData.cast &&
           castData.cast.map(cast => (
             <Casts key={cast.cast_id} castName={cast.original_name} character={cast.character} castImg={cast.profile_path} imgBaseUrl={imgBaseUrl} />
+          ))
+        }
+      </section>
+      <h1>Crew</h1>
+      <section className="casts-crew__container container">
+        {
+          castData &&
+          castData.crew &&
+          castData.crew.map(crew => (
+            <Crew crewImg={crew.profile_path} key={crew.id} imgBaseUrl={imgBaseUrl} crewName={crew.original_name} job={crew.job} />
           ))
         }
       </section>
