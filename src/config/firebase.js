@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth, GoogleAuthProvider, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const apiKey = import.meta.env.VITE_REACT_APP_FIREBASE_API_KEY;
 
