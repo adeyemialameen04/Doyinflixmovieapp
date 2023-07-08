@@ -27,9 +27,7 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: .5rem;
-  /* padding-block: 1rem; */
   height: 4rem;
-  /* background-color: red; */
 }
 
 .nav__container>div:nth-child(1) {

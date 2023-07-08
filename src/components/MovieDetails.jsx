@@ -81,7 +81,9 @@ const MovieDetails = ({ title, tagline, backdropPath, runtime, date, overview, i
           ))
         }
       </section>
-      <h1>Crew</h1>
+      <h1 style={{
+        marginBlock: "3rem",
+      }}>Crew</h1>
       <section className="casts-crew__container container">
         {
           castData &&
