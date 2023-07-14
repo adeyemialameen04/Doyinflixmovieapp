@@ -301,10 +301,11 @@ section>h1 {
   height: 400px;
 }
 
-/* ============= CASTS ============== */
+/* ============= CASTS && CREW ============== */
 .casts-crew__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  display: flex;
+  padding-block: 2rem;
+  overflow-y: scroll;
   gap: 1rem;
 }
 
@@ -312,6 +313,8 @@ section>h1 {
   outline: 4px solid transparent;
   background-color: var(--clr-background-sec);
   transition: var(--transition);
+  width: 1000px;
+  padding-inline: 1.5rem;
 }
 
 .castCrew:hover {
@@ -319,21 +322,11 @@ section>h1 {
   border-radius: .7rem;
 }
 
-.castCrew__img-container {
-  height: auto;
-  overflow: hidden;
-}
-
-.castCrew__img {
-  height: auto;
-}
-
-
 .placeholderImg {
   height: auto;
 }
 
-.castCrewDetail {
+*/ .castCrewDetail {
   color: var(--sec-btn);
   font-size: 0.9rem;
   padding: .8rem;
@@ -346,29 +339,6 @@ section>h1 {
 .cast-character {
   color: var(--clr-txt);
 }
-
-/* =============== CREW =========================== */
-/* .crew__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 2rem;
-}
-
-.crew {
-  outline: 4px solid transparent;
-  background-color: var(--clr-background-sec);
-  transition: var(--transition);
-}
-
-.crew__img-container {
-  max-height: 8rem;
-}
-
-.crew__img {
-  max-height: 8rem;
-  max-width: 500%;
-  object-fit: cover;
-} */
 
 /* =============== MOVIE LISTS =================== */
 .movies__section {
