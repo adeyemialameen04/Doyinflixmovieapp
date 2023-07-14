@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { auth, googleProvider } from "../config/firebase";
-import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
+import { signInWithPopup, onAuthStateChanged } from "firebase/auth";
 import { Link } from "react-router-dom";
 import './auth.css';
 
