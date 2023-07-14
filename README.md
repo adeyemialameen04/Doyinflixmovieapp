@@ -26,7 +26,7 @@ To run the application locally, follow these steps:
 2. Navigate to the project directory:
 
    ```
-   cd doyinflixr
+   cd doyinflix
    ```
 
 3. Install the dependencies:
