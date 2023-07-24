@@ -53,7 +53,23 @@ const MovieDetails = ({ title, tagline, backdropPath, runtime, date, overview, i
       <div className={`trailer__overlay ${isTrailerShowing ? "open-trailer" : ""}`}>
         <div className="trailer__container">
           {isTrailerShowing &&
-            <iframe onClick={(e) => e.stopPropagation()} className="trailer" src={trailerUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe
+              onClick={(e) => e.stopPropagation()}
+              className="trailer"
+              src={trailerUrl}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="
+              accelerometer;
+              autoplay; 
+              clipboard-write; 
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share
+             "
+              allowFullScreen
+            ></iframe>
           }
           <button
             className="close-trailer"

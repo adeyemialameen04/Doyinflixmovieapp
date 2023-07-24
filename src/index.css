@@ -461,6 +461,43 @@ section>h1 {
   color: var(--clr-dark-background);
 }
 
+/* ================ NotFound ==============  */
+.notFound__main {
+  margin-top: 6rem;
+}
+
+.notFound__container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 25rem;
+  background-color: var(--clr-gray);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+.notFound__container>h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.notFound__container>a {
+  margin-top: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  background-color: var(--clr-background-sec);
+  display: grid;
+  place-content: center;
+  height: 35px;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  color: var(--clr-white);
+  text-decoration: none;
+  max-width: 12.5rem;
+  align-self: center;
+  padding-inline: 1rem;
+}
+
 /* THEME CHANGER */
 
 #dark {
