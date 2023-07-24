@@ -18,14 +18,6 @@ const Navbar = () => {
   const placeHolderImage = "https://fakeimg.pl/600x400";
 
   useEffect(() => {
-    if (isNavShowing) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "scroll";
-    }
-  }, [isNavShowing]);
-
-  useEffect(() => {
     const handleScroll = () => {
       setShowScrollButton(window.scrollY > window.innerHeight);
     };
@@ -37,14 +29,10 @@ const Navbar = () => {
     };
   }, []);
 
-
-  // Scrolltotop
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behaviour: "smooth" });
   };
 
-
-  // chnages theme
   const handleToggleTheme = () => {
     setIsNavShowing(false);
     toggleTheme();
