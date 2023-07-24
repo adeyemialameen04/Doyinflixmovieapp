@@ -7,6 +7,7 @@ import Home from "../Home";
 import { useLocation, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Auth from "./Auth";
+import NotFound from "./NotFound";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const AnimatedRoutes = () => {
         <Route path="/search/:id" element={<SearchMoviesDetails />} />
         <Route path="/upcoming" element={<UpcomingMovies />} />
         <Route path="/upcoming/:id" element={<UpcomingMoviesDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );
