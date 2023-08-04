@@ -49,7 +49,7 @@ To run the application locally, follow these steps:
    npm run dev
    ```
 
-7. Open your browser and navigate to `http://localhost:3000` to see the application running.
+7. Open your browser and navigate to `http://localhost:5173` to see the application running.
 
 ## Usage
 
@@ -60,6 +60,7 @@ To run the application locally, follow these steps:
 
 ## Technologies Used
 
+- Vite
 - React
 - TMDB Movie API
 - HTML
