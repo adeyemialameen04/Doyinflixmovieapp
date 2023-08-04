@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { auth, googleProvider } from "../config/firebase";
-import { signInWithPopup, onAuthStateChanged } from "firebase/auth";
-import { Link } from "react-router-dom";
-import './auth.css';
+import { signInWithPopup, onAuthStateChanged, signOut } from "firebase/auth";
 
 const Auth = () => {
   const [user, setUser] = useState(null);
@@ -25,11 +23,23 @@ const Auth = () => {
     }
   };
 
+  const logout = async () => {
+    try {
+      await signOut(auth);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   if (!user) {
     return (
       <div className="signin">
-        <button onClick={signInWithGoogle} className="sign-with-google">Sign in with google</button>
+        <button
+          onClick={signInWithGoogle}
+          className="sign-with-google"
+        >
+          Sign in with google
+        </button>
       </div>
     );
   }
@@ -39,7 +49,6 @@ const Auth = () => {
       <p className="welcome__txt">
         Welcome <span>{auth?.currentUser?.displayName}</span>
       </p>
-      <Link className="proceed__link" to="/home">Proceed to App</Link>
     </div>
   );
 };
