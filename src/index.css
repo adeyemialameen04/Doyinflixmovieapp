@@ -512,11 +512,12 @@ section>h1 {
 
 #dark {
   background-color: var(--clr-background);
-  /* --clr-white: black; */
+  min-height: 100vh;
 }
 
 #light {
   background-color: #fafafa;
+  min-height: 100vh;
 }
 
 #dark .handle__page-btns p {
